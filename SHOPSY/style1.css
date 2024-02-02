@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.sections {
+    display: flex;
+    width: 80%;
+  
+    border: 1px solid #dbdbdb6e;
+    margin-bottom: 20px;
+  
+}
+
+.section {
+    cursor: pointer;
+    padding: 10px;
+    flex: 1;
+    font-weight: 600;
+    text-align: center;
+    background-color: #dbdbdb6e;
+    border-radius: 4px;
+}
+
+.section.selected {
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+   
+}
+
+.product-section {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 2%;
+}
+
+.product-section button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(6, 6, 6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-section .info {
+    text-align: center;
+}
+
+.product-section .title {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50%;
+   
+    display: inline-block;
+    margin-right: 45px;
+}
+
+.product-section .vendor {
+    font-size: 12px;
+    color: #070000;
+    display: inline-block;
+    text-align: end;
+}
+
+.price-label,
+.product-section .compare-price,
+.product-section .price,
+.product-section .discount {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.product-section .price-label {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.product-section .compare-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-right: 10px;
+}
+
+.product-section .discount {
+    margin-top: 5px;
+    color: rgb(228, 103, 103);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .sections,
+    .product-cards {
+        width: 100%;
+    }
+}

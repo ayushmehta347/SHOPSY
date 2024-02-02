@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>KAPDA  </title>
+</head>
+
+<body>
+
+    <h1 class="header">SELECT YOUR CHOICE</h1>
+
+    <div class="sections">
+        <section id="men" class="section" onclick="showTab('men')">👨🏼Men</section>
+        <section id="women" class="section" onclick="showTab('women')">👩🏼Women</section>
+        <section id="kids" class="section" onclick="showTab('kids')">👦🏼Kids</section>
+    </div>
+
+    <div id="menProducts" class="product-cards" style="display: none;"></div>
+    <div id="womenProducts" class="product-cards" style="display: none;"></div>
+    <div id="kidsProducts" class="product-cards" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
